@@ -1,5 +1,5 @@
-NEI <- readRDS("expdata_prj2/summarySCC_PM25.rds")
-SCC <- readRDS("expdata_prj2/Source_Classification_Code.rds")
+NEI <- readRDS("summarySCC_PM25.rds")
+SCC <- readRDS("Source_Classification_Code.rds")
 tot.PM25yr <- tapply(NEI$Emissions, NEI$year, sum)
 
 ###Step 2: prepare to plot to png
